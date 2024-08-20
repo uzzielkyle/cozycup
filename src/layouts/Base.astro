@@ -1,0 +1,28 @@
+---
+const { title } = Astro.props;
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<html
+  lang="en"
+  class="scrollbar-stable scrollbar-color scrollbar-thin scrollbar-thumb-yellow-700 scrollbar-track-neutral-200"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta title={title} />
+    <title>{title}</title>
+    <link rel="icon" href="/logo.png" sizes="any" />
+    <ViewTransitions />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <Nav />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
