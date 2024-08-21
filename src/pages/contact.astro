@@ -1,0 +1,41 @@
+---
+import MainLayout from "../layouts/Base.astro";
+import ItemCard from "../components/ItemCard.astro";
+import MemberCard from "../components/MemberCard.astro";
+
+const menu = await Astro.glob("../content/menu/*.md");
+
+const coffees = menu.filter((item) => item.frontmatter.category === "coffee");
+const pastries = menu.filter((item) => item.frontmatter.category === "pastry");
+const members = menu.filter((item) => item.frontmatter.category === "member");
+---
+
+<MainLayout>
+<div class="min-h-screen bg-green-500 flex flex-col items-center py-12">
+  <section class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg mb-8">
+    <h2 class="text-center text-2xl font-bold mb-4">Contact Information</h2>
+    <p class="text-center text-lg font-medium">Café Address</p>
+    <p class="text-center text-gray-700 mb-4">Libis Road, Barangay San Pedro, Puerto Princesa, Palawan</p>
+    
+    <p class="text-center text-lg font-medium">Phone Number</p>
+    <p class="text-center text-gray-700 mb-4">(63) 9166833896</p>
+    
+    <p class="text-center text-lg font-medium">Email Address</p>
+    <p class="text-center text-gray-700">contact@cozycafe.com</p>
+  </section>
+
+
+  
+  <section class="w-full max-w-lg">
+    <h2 class="text-center text-xl font-bold mb-4 text-white">Find Us Here</h2>
+    <div class="w-full h-64">
+      <iframe
+        class="w-full h-full rounded-lg shadow-md"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d413.3107332897063!2d118.74992847776626!3d9.757891723285256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b56393c1b7255b%3A0xbae8cf0a7ac01982!2sLibis%20Bayview%20Hotel!5e0!3m2!1sen!2sph!4v1724249841311!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+</div>
+</MainLayout>
