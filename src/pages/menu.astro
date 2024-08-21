@@ -1,0 +1,36 @@
+---
+import MainLayout from "../layouts/Base.astro";
+import ItemCard from "../components/ItemCard.astro";
+
+const menu = await Astro.glob("../content/menu/*.md");
+
+const coffees = menu.filter((item) => item.frontmatter.category === "coffee");
+const pastries = menu.filter((item) => item.frontmatter.category === "pastry");
+---
+
+<MainLayout title="Menu | CozyCup">
+  <section class="py-12 md:py-16">
+    <h3 class="text-4xl font-extrabold mb-12 text-center">Our Coffees</h3>
+    <ul class="flex flex-wrap gap-12 md:gap-16 justify-center">
+      {
+        coffees.map((item) => (
+          <li>
+            <ItemCard item={item.frontmatter} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+  <section class="py-12 md:py-16">
+    <h3 class="text-4xl font-extrabold mb-12 text-center">Our Pastries</h3>
+    <ul class="flex flex-wrap gap-12 md:gap-16 justify-center">
+      {
+        pastries.map((item) => (
+          <li>
+            <ItemCard item={item.frontmatter} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</MainLayout>

@@ -1,5 +1,10 @@
 ---
 import MainLayout from "../layouts/Base.astro";
+import ItemCard from "../components/ItemCard.astro";
+
+const menu = await Astro.glob("../content/menu/*.md");
+
+const bestSellers = menu.filter((item) => item.frontmatter.best_seller);
 ---
 
 <MainLayout title="Home | CozyCup">
@@ -14,7 +19,18 @@ import MainLayout from "../layouts/Base.astro";
         Relax, <br />
         Repeat.
       </h2>
-      <!-- <img src="/hero.jpg" alt="CozyCup Interior" /> -->
     </div>
+  </section>
+  <section class="py-12 md:py-16">
+    <h3 class="text-4xl font-extrabold mb-12 text-center">Best Sellers</h3>
+    <ul class="flex flex-wrap gap-12 md:gap-16 justify-center">
+      {
+        bestSellers.map((item) => (
+          <li>
+            <ItemCard item={item.frontmatter} />
+          </li>
+        ))
+      }
+    </ul>
   </section>
 </MainLayout>
