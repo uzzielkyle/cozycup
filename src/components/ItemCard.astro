@@ -7,7 +7,7 @@ const { item } = Astro.props;
 >
   <div class="flex justify-center items-center h-[50%] overflow-hidden w-full">
     <img
-      src={item.image}
+      src={"/" + item.image}
       alt={"An image of " + item.product_name}
       class="w-full object-fill"
     />
