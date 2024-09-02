@@ -14,9 +14,9 @@ const { item } = Astro.props;
   </div>
   <div class="p-5">
     <h4 class="text-xl font-bold">{item.name}</h4>
-    <p class="text-gray-700 text-pretty">{item.description}</p>
-    <span class="absolute bottom-0 mb-4 py-4 text-sm font-medium mt-4"
-      >{item.bio}</span
-    >
+    <span class="text-gray-700 text-pretty">{item.description}</span>
+    <p class="mt-2 py-2 text-sm">
+      {item.bio}
+    </p>
   </div>
 </div>
