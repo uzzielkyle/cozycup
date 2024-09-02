@@ -1,9 +1,11 @@
 # Cozy Cup Cafe
 
 ## Project Description
-Cozy Cup Cafe is a website created for a warm and inviting coffee house experience. Built using the Astro JavaScript framework, this site provides an engaging platform to showcase the café's offerings, story, and mission. Whether you're looking to browse the menu, learn more about the café's history, or contact the team, Cozy Cup Cafe delivers a seamless and cozy user experience. You can visit us at https://cozycup.netlify.app
+
+Cozy Cup Cafe is a website created for a warm and inviting coffee house experience. Built using the Astro JavaScript framework, this site provides an engaging platform to showcase the café's offerings, story, and mission. Whether you're looking to browse the menu, learn more about the café's history, or contact the team, Cozy Cup Cafe delivers a seamless and cozy user experience. You can visit us at our [website](https://cozycup.netlify.app).
 
 ## Features
+
 - **Home Page**
   - Inviting hero section with an image and catchy tagline: "Sip, Relax, Repeat."
   - Featured Products section highlighting popular coffee blends and pastries.
@@ -28,42 +30,44 @@ Cozy Cup Cafe is a website created for a warm and inviting coffee house experien
   - Social Media Icons: Links to the café's social media profiles.
 
 ## Screen Captures
-1. ![Home Page](https://github.com/user-attachments/assets/728b51e5-034c-4e07-9219-f70dc55e90e5)
-   *The welcoming hero section with the tagline "Sip, Relax, Repeat."*
 
+1. *The welcoming hero section with the tagline "Sip, Relax, Repeat."*
+   ![Home Page](https://github.com/user-attachments/assets/728b51e5-034c-4e07-9219-f70dc55e90e5)
 
-1. ![Menu Page](https://github.com/user-attachments/assets/7adfd8f1-8567-441d-acf2-6564e018ba37)
-   *A glimpse of our coffee and pastry offerings, complete with descriptions and prices.*
+2. *A glimpse of our coffee and pastry offerings, complete with descriptions and prices.*
+   ![Menu Page](https://github.com/user-attachments/assets/7adfd8f1-8567-441d-acf2-6564e018ba37)
 
-2. ![About Us Page](https://github.com/user-attachments/assets/023c8b78-1500-4382-8ae2-2ea2641f0f1c)
-   *Meet the team behind Cozy Cup Cafe and learn about our mission.*
+3. *Meet the team behind Cozy Cup Cafe and learn about our mission.*
+   ![About Us Page](https://github.com/user-attachments/assets/023c8b78-1500-4382-8ae2-2ea2641f0f1c)
 
-3. ![Contact Page](https://github.com/user-attachments/assets/36c7c037-dc3b-4504-a477-04bed90f7d40)
-   *Easily reach out to us with our contact form and find our location on the map.*
+4. *Easily reach out to us with our contact form and find our location on the map.*
+   ![Contact Page](https://github.com/user-attachments/assets/36c7c037-dc3b-4504-a477-04bed90f7d40)
 
 ## About the Authors
 
-<div style="display: flex; align-items: center;">
-  <img src="https://github.com/uzzielkyle.png" width="150" style="border-radius: 50%; margin-right: 10px;" />
-  <div style="margin-right: 10px;">
-    <strong>Name:</strong> Uzziel Kyle Ynciong  
-    <strong>Email:</strong> uzzielynciong@gmail.com
-  </div>
-
-  <img src="https://github.com/Carl2121.png" width="150" style="border-radius: 50%; margin-left: 10px;" />
-  <div style="margin-left: 10px;">
-    <strong>Name:</strong> Carlos Heredero  
-    <strong>Email:</strong> herederocarlos9@gmail.com
-  </div>
-</div>
+<table>
+    <tr>
+        <td align="center" style="padding: 10px;">
+            <img src="https://github.com/uzzielkyle.png" width="150" style="border-radius: 50%;" /><br>
+            <div style="text-align: left;">
+                <strong>Name:</strong> Uzziel Kyle Ynciong<br>
+                <strong>Email:</strong> uzzielynciong@gmail.com
+            </div>
+        </td>
+        <td align="center" style="padding: 10px;">
+            <img src="https://github.com/Carl2121.png" width="150" style="border-radius: 50%;" /><br>
+            <div style="text-align: left;">
+                <strong>Name:</strong> Carlos Heredero<br>
+                <strong>Email:</strong> herederocarlos9@gmail.com
+            </div>
+        </td>
+    </tr>
+</table>
 
 
 ---
 
-
-
-
-#### Uzziel Kyle Ynciong & Carlos Heredero
+### Uzziel Kyle Ynciong & Carlos Heredero
 
 <div style="display: flex; align-items: center; margin-bottom: 10px;">
   <a href="https://www.facebook.com/uk.ynciong24" style="text-decoration: none; display: flex; align-items: center; margin-right: 40px;">
